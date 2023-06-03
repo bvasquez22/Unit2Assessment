@@ -73,8 +73,21 @@ const calcFinalPrice = (cartTotal, couponValue, tax) => (cartTotal * (tax + 1) -
 */
 
 /*
-    TEXT ANSWER HERE
+    A customer object should have the following properties:
+    1. Name, 2. Dietary restrictions, 3. Frequency of attendance,
+    4. Date of last attendance, 5. Favorite orders, 6. Kindness score (1-10)
 
+    Name is obviously important because a restaurant should know the names of those
+    who frequent their restaurant. Dietary restrictions would be good to know that
+    way they can recommend menu items or possibly even provide special menus if for
+    example that person is a vegetarian, or maybe allergic to dairy. Frequency of
+    attendance is good to know, that way a restaurant can know about how often this
+    customer comes and if they should potentially prepare any special accomodations in
+    advance. Date of last attendance helps give a general idea of when this person will likely
+    come back next. Favorite orders would be good to know that way, if they're one of those,
+    "usually orders the same thing" kind of person, they can make the dining experience a lot more 
+    efficient for the customer. And finally, a kindness score could help a waiter or waitress
+    know what to expect and be prepared to handle a less friendly customer.
 */
 
 /*
@@ -82,4 +95,11 @@ const calcFinalPrice = (cartTotal, couponValue, tax) => (cartTotal * (tax + 1) -
     guidelines.
 */
 
-//CODE HERE
+const customer1 = {
+    name: 'Mark',
+    diet: 'Vegetarian',
+    frequency: 'Monthly',
+    lastAttendance: 'May 15, 2023',
+    favoriteOrders: ["Chef's salad", 'French onion soup'],
+    kindnessScore: 8
+}
