@@ -33,10 +33,7 @@ const cart = [
     }
 ]
 
-//CODE HERE
-
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
-
+const summedPrice = cart.reduce((acc, curr) => acc + curr.price, 0)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -53,9 +50,7 @@ const cart = [
     decimals, for example: .06 for a 6% tax.
 */
 
-//CODE HERE
-
-
+const calcFinalPrice = (cartTotal, couponValue, tax) => (cartTotal * (tax + 1) - couponValue).toFixed(2)
 
 //////////////////PROBLEM 3////////////////////
 /*  
